@@ -19,7 +19,7 @@
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
         <div class="relative z-10 max-w-4xl mx-auto px-4">
             <h1 class="text-5xl font-bold mb-4 drop-shadow-lg">Full Spectrum Omega-3 Supplement</h1>
-            <p class="text-xl mb-6 drop-shadow-md">Wild-sourced, mercury-free fuel for heart, brain, and peak performance. Backed by science.</p>
+            <p class="text-xl mb-6 drop-shadow-md">Wild-sourced, mercury-free fuel for heart, brain and peak performance. Backed by science.</p>
             <!-- Waitlist CTA -->
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <a href="#waitlist" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg inline-block transition drop-shadow-lg">Join Waitlist</a>
@@ -39,20 +39,37 @@
             </ul>
             <div>
                 <p class="text-gray-700 mb-4">Dive deeper with my latest insights:</p>
-                <a href="https://www.linkedin.com/company/108549702" class="text-blue-600 hover:text-blue-800 underline">Read my article on Omega-3 Global levels</a>
+                <a href="https://www.linkedin.com/pulse/what-omega-3-index-james-roche-lqx9e" class="text-blue-600 hover:text-blue-800 underline">Read my article on Omega-3 Global levels</a>
             </div>
         </div>
     </section>
 
-    <!-- CTA Footer -->
+    <!-- LIVE WAITLIST FORM - MAイルTO -->
     <footer class="bg-gray-800 text-white py-12 text-center">
         <div class="max-w-md mx-auto px-4">
             <h3 class="text-xl font-semibold mb-4">Stay Fueled – Get Exclusive Tips</h3>
-            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-4" id="waitlist">
-                <input type="email" name="email" placeholder="Enter your email" required class="w-full p-3 rounded text-gray-900">
-                <button type="submit" class="w-full bg-green-600 hover:bg-green-700 p-3 rounded font-semibold">Subscribe for Free</button>
+            <form action="mailto:website@omega3-research.com"
+                  method="POST"
+                  enctype="text/plain"
+                  class="space-y-4"
+                  id="waitlist">
+                <input type="email"
+                       name="email"
+                       placeholder="Enter your email"
+                       required
+                       class="w-full p-3 rounded text-gray-900"
+                       oninvalid="this.setCustomValidity('Please enter a valid email')"
+                       oninput="this.setCustomValidity('')">
+                <input type="hidden" name="subject" value="New Omega-3 Waitlist Signup">
+                <input type="hidden" name="body" value="--- New Waitlist Signup ---%0D%0AEmail: ${email}%0D%0A%0D%0ASubscribed for exclusive Omega-3 tips and launch updates!%0D%0A---">
+                <button type="submit"
+                        class="w-full bg-green-600 hover:bg-green-700 p-3 rounded font-semibold transition">
+                    Subscribe for Free
+                </button>
             </form>
-            <p class="mt-6 text-sm">© 2025 Omega3 Research | Follow on <a href="https://www.linkedin.com/company/108549702" class="underline">LinkedIn</a></p>
+            <p class="mt-6 text-sm text-gray-300">© 2025 Omega3 Research |
+                <a href="https://www.linkedin.com/company/108549702" class="underline hover:text-white">Follow on LinkedIn</a>
+            </p>
         </div>
     </footer>
 

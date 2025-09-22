@@ -3,96 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Full Spectrum Omega-3 supplements launching October 2025. Wild-sourced, lab-tested, mercury-free. Join waitlist for early access.">
-    <meta property="og:title" content="Full Spectrum Omega-3s – Launching Soon">
-        <meta property="og:description" content="Wild Alaskan Omega-3s for heart & brain health. Join 500+ on waitlist.">
-            <title>Full Spectrum Omega-3s | Launching Soon</title>
-            <script src="https://cdn.tailwindcss.com"></script>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Omega3 Research | Plankton-Powered Performance</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6; color: #333;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,123,255,0.8), rgba(0,123,255,0.8)),
+                        url('your-whale-hero.jpg') center/cover;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        .hero h1 { font-size: clamp(2rem, 5vw, 4rem); margin-bottom: 1rem; }
+        .hero p { font-size: clamp(1rem, 3vw, 1.5rem); max-width: 600px; margin-bottom: 2rem; }
+        .cta-button {
+            background: #28a745;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.3s;
+            font-weight: bold;
+        }
+        .cta-button:hover { background: #218838; }
+        .value-prop {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+        .value-item { text-align: center; }
+        .value-item h3 { color: #007bff; margin-bottom: 0.5rem; }
+        @media (max-width: 768px) { .hero { min-height: 80vh; } }
+    </style>
 </head>
-<body class="bg-gray-50">
-    <!-- DEBUG: Force redeploy at 2025-09-20 - Whale hunt -->
-    
-    <!-- CLEAN SINGLE HERO HEADER -->
-    <header class="bg-cover bg-center bg-no-repeat text-white py-20 text-center relative overflow-hidden" 
-            style="background-image: url('hero-whale.jpg');">
-        <!-- Dark overlay for text readability -->
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div class="relative z-10 max-w-4xl mx-auto px-4">
-            <h1 class="text-5xl font-bold mb-4 drop-shadow-lg">Full Spectrum Omega-3 Supplement</h1>
-            <p class="text-xl mb-6 drop-shadow-md">Wild-sourced, mercury-free fuel for heart, brain and peak performance. Backed by science.</p>
-            <!-- Waitlist CTA -->
-            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <a href="#waitlist" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg inline-block transition drop-shadow-lg">Join Waitlist</a>
-                <p class="text-lg opacity-80">Launching October 2025 – Be First to Know</p>
-            </div>
-        </div>
-    </header>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Plankton Omega-3s</h1>
+        <p>The Universal Stack: 2x Bioavailability for Surgeons, SEALs, Women, & Families</p>
+        <a href="https://x.com/omega3-research" class="cta-button" target="_blank">
+            Join 400+ Pros: Follow @omega3-research on X
+        </a>
+    </section>
 
-    <!-- Why Us Section -->
-    <section class="py-16 px-4 max-w-4xl mx-auto">
-        <h2 class="text-3xl font-semibold text-center mb-8 text-gray-800">Why Full Spectrum Omega-3s Stand Out</h2>
-        <div class="grid md:grid-cols-2 gap-8">
-            <ul class="space-y-4 text-lg">
-                <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> Sustainably sourced from pristine Alaskan waters</li>
-                <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> 1,000mg EPA/DHA per softgel – lab-tested purity</li>
-                <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> No fillers, GMOs, or artificial ingredients</li>
-            </ul>
-            <div>
-                <p class="text-gray-700 mb-4">Dive deeper with my latest insights:</p>
-                <a href="https://www.linkedin.com/pulse/what-omega-3-index-james-roche-lqx9e" class="text-blue-600 hover:text-blue-800 underline">Read my article on Omega-3 Global levels</a>
-            </div>
+    <!-- Value Proposition -->
+    <section class="value-prop">
+        <div class="value-item">
+            <h3>🧠 2x Brain Bioavailability</h3>
+            <p>Phospholipid form crosses blood-brain barrier faster—sharper focus for OR rounds or board meetings.</p>
+        </div>
+        <div class="value-item">
+            <h3>❤️ Zero Contaminants</h3>
+            <p>Antarctic-sourced, molecularly distilled—pristine EPA/DHA with no mercury or PCBs.</p>
+        </div>
+        <div class="value-item">
+            <h3>🐕 Human + Pet Protocols</h3>
+            <p>Joint support for aging Labs, hormonal balance for women, recovery for SEALs—same pristine stack.</p>
         </div>
     </section>
 
-    <!-- ENHANCED FOOTER WITH SOCIAL ICONS -->
-    <footer class="bg-gray-800 text-white py-12 text-center">
-        <div class="max-w-md mx-auto px-4">
-            <h3 class="text-xl font-semibold mb-4">Stay Fueled – Get Exclusive Tips</h3>
-            <form action="mailto:website@omega3-research.com"
-                  method="POST"
-                  enctype="text/plain"
-                  class="space-y-4 mb-8"
-                  id="waitlist">
-                <input type="email"
-                       name="email"
-                       placeholder="Enter your email"
-                       required
-                       class="w-full p-3 rounded text-gray-900"
-                       oninvalid="this.setCustomValidity('Please enter a valid email')"
-                       oninput="this.setCustomValidity('')">
-                <input type="hidden" name="subject" value="New Omega-3 Waitlist Signup">
-                <input type="hidden" name="body" value="--- New Waitlist Signup ---%0D%0AEmail: ${email}%0D%0A%0D%0ASubscribed for exclusive Omega-3 tips and launch updates!%0D%0A---">
-                <button type="submit"
-                        class="w-full bg-green-600 hover:bg-green-700 p-3 rounded font-semibold transition">
-                    Subscribe for Free
-                </button>
-            </form>
-            
-            <!-- SOCIAL ICONS ROW -->
-            <div class="flex justify-center space-x-6 mb-6">
-                <!-- X (Twitter) Icon -->
-                <a href="https://x.com/Omega3Research"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="text-xl hover:scale-110 transition-transform group">
-                    <i class="fab fa-x-twitter text-black bg-white rounded-full p-3 shadow-lg group-hover:bg-gray-200"></i>
-                    <span class="sr-only">Follow on X</span>
-                </a>
-                
-                <!-- LinkedIn Icon -->
-                <a href="https://www.linkedin.com/company/108549702"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="text-xl hover:scale-110 transition-transform group">
-                    <i class="fab fa-linkedin-in text-blue-700 bg-white rounded-full p-3 shadow-lg group-hover:bg-blue-50"></i>
-                    <span class="sr-only">Follow on LinkedIn</span>
-                </a>
-            </div>
-            
-            <p class="text-sm text-gray-300">© 2025 Omega3 Research</p>
-        </div>
-    </footer>
-
+    <script>
+        // Optional: Track clicks (Google Analytics or simple console log)
+        document.querySelector('.cta-button').addEventListener('click', function() {
+            console.log('X redirect clicked - waitlist conversion!');
+            // gtag('event', 'x_redirect'); // If you add GA later
+        });
+    </script>
 </body>
 </html>

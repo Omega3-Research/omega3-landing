@@ -13,12 +13,10 @@
             line-height: 1.6; color: #333;
         }
         
-        /* Hero Section */
+        /* Hero Section - Local Image Priority */
         .hero {
-            background: linear-gradient(rgba(0,123,255,0.7), rgba(0,123,255,0.7)),
-                        url('https://images.unsplash.com/photo-1572492047550-85f00ff4dd52?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80') center/cover;
-            /* Replace above URL with your hero-whale.jpg when uploaded */
-            min-height: 100vh;
+            background: url(hero-whale.jpg) center/cover;
+            min-height: 50vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -27,21 +25,11 @@
             color: white;
             padding: 20px;
             position: relative;
+            background-color: #0a4d68;
+            background-size: cover;
+            background-position: center;
         }
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(0, 0, 0, 0.3); /* Dark overlay for text readability */
         }
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            max-width: 800px;
-        }
-        .hero h1 { font-size: clamp(2.5rem, 6vw, 5rem); margin-bottom: 1rem; font-weight: 700; }
-        .hero p { font-size: clamp(1.1rem, 3vw, 1.6rem); margin-bottom: 2rem; opacity: 0.95; }
-        
         /* CTA Button */
         .cta-button {
             background: #28a745;
@@ -144,28 +132,34 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Plankton Omega-3s</h1>
-            <p>The Universal Stack: 2x Bioavailability for Surgeons, SEALs, Women, & Families</p>
-            <a href="https://x.com/omega3-research" class="cta-button" target="_blank">
-                Join 400+ Pros: Follow @omega3-research on X
-            </a>
+            <h1> Plankton Omega-Full Spectrum </h1>
+            <H2>Universal Bioavailability </H2>,<BR>
+            <a href="https://x.com/i/lists/1970383059695354252" class="cta-button" style="background-color: yellow; color: black; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Join the Waitlist</a>
         </div>
     </section>
 
     <!-- Value Proposition -->
     <section class="value-prop">
+        
         <div class="value-item">
-            <h3>🧠 2x Brain Bioavailability</h3>
-            <p>Phospholipid form crosses blood-brain barrier faster—sharper focus for OR rounds, board meetings, or family life.</p>
+               <a href="https://x.com/i/lists/1970383059695354252" target="_blank" aria-label="Healthy Aging List"><H3>Healthy Aging
+                    <img src="https://abs.twimg.com/favicons/favicon.ico" alt="X icon" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 5px;"></a></H3>
         </div>
+        
+        
         <div class="value-item">
-            <h3>❤️ Zero Contaminants</h3>
-            <p>Antarctic-sourced, molecularly distilled—pristine EPA/DHA with no mercury, PCBs, or sustainability guilt.</p>
+            <a href="https://x.com/i/lists/1970390936535323014" target="_blank" aria-label="Burnout Syndrome"><H3>Burnout Syndrome
+                <img src="https://abs.twimg.com/favicons/favicon.ico" alt="X icon" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 5px;"></a></H3>
+            
         </div>
+        
+        
         <div class="value-item">
-            <h3>🐕 Human + Pet Protocols</h3>
-            <p>Joint support for aging Labs, hormonal balance for women, recovery for SEALs—same pristine stack for your whole pack.</p>
+             <a href="https://x.com/i/lists/1970388354127552909" target="_blank" aria-label="Inflammation and Oxidative Stress"><H3>Inflammation
+                 <img src="https://abs.twimg.com/favicons/favicon.ico" alt="X icon" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 5px;"></a></H3>
+             
         </div>
+        
     </section>
 
     <!-- Footer with Font Awesome Icons -->
